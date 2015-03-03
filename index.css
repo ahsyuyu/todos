@@ -1,0 +1,60 @@
+/* application css */
+body{
+	background-image:url(notebook.jpg);
+	background-repeat: repeat;	
+}
+input{
+	background-color: rgba(255,255,255,0.2);
+	box-shadow: none;
+	border:none;
+	width: 50%;
+}
+button{
+	background-color: rgba(255,255,255,0.3);
+	box-shadow: none;
+	/*border:rgba(0,0,0,0.2) 2px solid;*/
+	border:none;
+	border-radius: 10px;
+	/*width:400px;*/
+	-webkit-transition-property: width;
+	transition-property: width;
+	-webkit-transition:all 0.4s;
+	transition:all 0.4s;
+}
+button:hover{
+	background-color: rgba(0,0,0,0.3);
+	color:rgba(255,255,255,0.7);
+	/*width:800px;
+	transform:scale(1.3);*/
+}
+
+.inline{
+	display: inline;
+}
+
+.center{
+	text-align: center;
+}
+
+#header{
+	font-size: 300%;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+	color: rgba(97, 0, 0, 0.3);
+}
+
+#main {font-size:200%;
+	font-family: courier;
+	color:grey;
+}
+
+.hl {color:red;}
+
+.task{
+	color:grey;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+.task.done{
+	color:silver;
+	text-decoration: line-through;
+}
